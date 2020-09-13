@@ -19,6 +19,9 @@ deploy_dev:
 deploy_prod:
   stage: deploy
   image: ruby:latest
+  environment:
+    name: master
+    url: http://php.ms-framework.site/
   script:
     - dpl --provider=heroku --app=$HEROKU_APP_PRODUCTION --api-key=$HEROKU_API_KEY
   only:
