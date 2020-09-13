@@ -30,6 +30,11 @@
                         <li class="nav-item d-none">
                             <nuxt-link to="/route" class="nav-link text-white">DevOPS</nuxt-link>
                         </li>
+                        <li class="nav-item">
+                              <a href="https://gitlab.com/ms--framework/tutoriel" target="_blank" class="btn btn-primary">
+                                Gitlab Project
+                              </a>
+                        </li>
                     </ul>
                 </div>
             </div>
