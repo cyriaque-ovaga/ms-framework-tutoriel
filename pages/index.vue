@@ -1,6 +1,9 @@
 <template>
 <div>
-    <h1 align="center">Bienvenue sur le meilleur framework PHP pour un BACKEEND API</h1>
+    <h1 align="center">Bienvenue sur le meilleur framework PHP pour un BACKEND API</h1>
+       <div class="mt-4">
+        <nuxt-link to="/commencer" class="btn btn-primary">Commencer -></nuxt-link>
+    </div>
 </div>
 </template>
 
