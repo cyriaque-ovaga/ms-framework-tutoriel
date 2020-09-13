@@ -1,20 +1,32 @@
 <template>
-  <div class="gris padding">
-    <div class="white container padding">
-      <nuxt />
+<div>
+    <Header></Header>
+    <div class="white container padding" style="margin-top:80px">
+        <nuxt />
     </div>
-  </div>
+</div>
 </template>
+
+<script>
+import Header from "~/components/Header.vue";
+
+export default {
+    components: {
+        Header,
+    },
+};
+</script>
 
 <style>
 .gris {
-  background-color: #fafafa;
+    background-color: #fafafa;
 }
+
 .padding {
-  padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 .white {
-  background-color: white;
+    background-color: white;
 }
 </style>
