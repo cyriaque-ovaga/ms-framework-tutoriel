@@ -16,6 +16,10 @@
         Donc, avant d'utiliser MSFramework, assurez-vous que Composer est installé sur votre machine et GIT.
     </p>
     <code>git clone https://gitlab.com/ms--framework/php-framework.git</code>
+     <p>
+        Installer les dépendances :
+    </p>
+    <code>composer install</code>
     <p>
         Pour éxécuter le code :
     </p>
