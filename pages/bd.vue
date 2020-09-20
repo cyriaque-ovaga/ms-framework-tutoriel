@@ -19,6 +19,7 @@
         correspond à une base de
         donnée distante ou URL distant
     </p>qdssqdqs
+    dqsdqsdqs
     <code>
         #Base de donnée local
         <br />db_datatable: "$DATABASE_LOCAL"
