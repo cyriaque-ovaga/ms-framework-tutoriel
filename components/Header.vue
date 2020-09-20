@@ -27,13 +27,14 @@
                         <li class="nav-item">
                             <nuxt-link to="/route" class="nav-link text-white">Route</nuxt-link>
                         </li>
-                        <li class="nav-item d-none">
-                            <nuxt-link to="/route" class="nav-link text-white">DevOPS</nuxt-link>
+                        <li class="nav-item">
+                            <nuxt-link to="/swagger" class="nav-link text-white">Documentation API</nuxt-link>
                         </li>
                         <li class="nav-item">
-                              <a href="https://gitlab.com/ms--framework/php-framework" target="_blank" class="btn btn-primary">
-                                Gitlab Project
-                              </a>
+                            <nuxt-link to="/devops" class="nav-link text-white">DevOPS</nuxt-link>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://gitlab.com/ms--framework/" target="_blank" class="btn btn-primary">Gitlab Project</a>
                         </li>
                     </ul>
                 </div>

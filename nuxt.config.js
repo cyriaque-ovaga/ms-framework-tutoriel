@@ -4,14 +4,14 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || "",
+    title: "Tutoriel sur le MSFRAMEWORK",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
+        content: "MS Framework le framework php pour la génération des API"
       }
     ],
     link: [
@@ -19,21 +19,18 @@ export default {
       {
         rel: "stylesheet",
         type: "text/css",
-        href:
-          "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        href: "/css/bootstrap.min.css"
       }
     ],
     script: [
       {
-        src: "https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        src: "/js/jquery-3.4.1.slim.min.js"
       },
       {
-        src:
-          "https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        src: "/js/popper.min.js"
       },
       {
-        src:
-          "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        src: "/js/bootstrap.min.js"
       }
     ]
   },

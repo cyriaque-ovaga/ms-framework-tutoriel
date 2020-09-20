@@ -4,14 +4,14 @@
     <h2>Identifier la branche</h2>
     <p>
         Dans le fichier
-        <strong>app\home\assets\config\app.yaml</strong>, vous pouvez modifier la variable branche
+        <strong>app\config\app.yaml</strong>, vous pouvez modifier la variable branche
         qui est par défaut
         <strong>master</strong>
     </p>
     <h2>Administrer la base de donnée</h2>
     <p>
         Selon le nom de branche, ouvrir le fichier
-        <strong>app\home\config\branche\master.yaml</strong>.
+        <strong>app\config\branche\master.yaml</strong>.
     </p>
     <p>
         Vous pouvez modifier les variables sachant que celle qui ont un suffixe
