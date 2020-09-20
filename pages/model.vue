@@ -3,7 +3,7 @@
     <h1>Model</h1>
     <p>
         Les model se trouve dans le dossier
-        <strong>app\home\model</strong>, il contient toutes les classes reliés à des tables
+        <strong>app\model</strong>, il contient toutes les classes reliés à des tables
     </p>
     <h2>Création d'un model</h2>
     <code>composer new-model $ressource $activity</code>
@@ -18,15 +18,15 @@
     <h2>Gestion des champs d'une activité</h2>
     <p>
         Dans la méthode
-        <strong>la_bd</strong>, vous pouvez ajouter les champs de votre table.
+        <strong>champ_table</strong>, vous pouvez ajouter les champs de votre table.
     </p>
     <code>
-        $migration = new \ms\model\migration(new user($serveur));
-        <br />$migration->champ("nom", "text");
-        <br />$migration->champ("mdp", "text");
-        <br />$migration->champ("telephone", "text");
-        <br />$migration->champ("sexe", "int");
-        <br />$migration->execute();
+        <br />return array(
+        <br />array(
+        <br />"nom" => "nom",
+        <br />"type" => "text",
+        <br />"description" => "Mon nom",
+        <br />));
     </code>
     <h2>Initialiser la base de donnée</h2>
     <p>Pour initialiser la base de donnée en local:</p>
@@ -71,9 +71,11 @@
         <br />
     </code>
     <h1>Les requêtes MySQL</h1>
+    <p>Vous devez créer la class qui relie votre model:</p>
+    <code>$class= new \app\model\$ressource\$activity();</code>
     <h2>Recherche</h2>
     <p>Pour faire une recherche simple</p>
-    <code>$reponse=$this->app->getmodel("$ressource\$activity")->Select()->Champ('')->Condition('')->exec();</code>
+    <code>$reponse=$class->Select()->Champ('')->Condition('')->exec();</code>
     <p>
         Pour faire une recherche depuis un tableau. Le
         <strong>prefixe</strong> permet peut être
@@ -81,17 +83,17 @@
     </p>
     <code>
         $reponse=$this->app->recup->rech($data,"$prefixe");
-        <br />$req=$this->app->getmodel("$ressource\$activity")->Select()->Champ("")->Condition($reponse["requete"])->PDO_array($reponse["pdo_array"])->exec();
+        <br />$req=$class->Select()->Champ("")->Condition($reponse["requete"])->PDO_array($reponse["pdo_array"])->exec();
     </code>
     <p>
         Vous pouvez dans le cadre d'une jointure ajouter la méthode
         <strong>Jointure</strong>
     </p>
-    <code>$reponse=$this->app->getmodel("$ressource\$activity")->Select()->Champ('')->Jointure("")->Condition('')->exec();</code>
+    <code>$reponse=$class->Select()->Champ('')->Jointure("")->Condition('')->exec();</code>
 
     <h2>Ajout</h2>
     <p>Pour faire un ajout simple</p>
-    <code>$reponse=$this->app->getmodel("$ressource\$activity")->Insert()->Champ(" nom ")->Valeur(" 'test' ")->exec();</code>
+    <code>$reponse=$class->Insert()->Champ(" nom ")->Valeur(" 'test' ")->exec();</code>
     <p>
         Pour faire un ajout depuis un tableau. Le
         <strong>prefixe</strong> permet peut être
@@ -99,12 +101,12 @@
     </p>
     <code>
         $reponse= $this->app->recup->add_pdo($data,"$prefixe");
-        <br />$last_id = $this->app->getmodel("$ressource\$activity")->Insert()->Champ($reponse['champs'])->Valeur($reponse['valeur'])->PDO_array($reponse['tab'])->exec();
+        <br />$last_id = $class->Insert()->Champ($reponse['champs'])->Valeur($reponse['valeur'])->PDO_array($reponse['tab'])->exec();
     </code>
 
     <h2>Modification</h2>
     <p>Pour faire une modification simple</p>
-    <code>$this->app->getmodel("$ressource\$activity")->Update()->Valeur(" nom='chouchou' ")->Condition(" id='id' ")->PDO_array()->exec();</code>
+    <code>$class->Update()->Valeur(" nom='chouchou' ")->Condition(" id='id' ")->PDO_array()->exec();</code>
     <p>
         Pour faire une modification depuis un tableau. Le
         <strong>prefixe</strong> permet peut être
@@ -112,12 +114,12 @@
     </p>
     <code>
         $reponse= $this->app->recup->mod_pdo($data,"$prefixe");
-        <br />$this->app->getmodel("$ressource\$activity")->Update()->Valeur($reponse['champs'])->Condition(" id='id' ")->PDO_array($reponse['tab'])->exec();
+        <br />$class->Update()->Valeur($reponse['champs'])->Condition(" id='id' ")->PDO_array($reponse['tab'])->exec();
     </code>
 
     <h2>Suppression</h2>
     <p>Pour faire une suppression simple</p>
-    <code>$this->app->getmodel("$ressource\$activity")->supprimer(array( "valeur"=>" id='$id' ", ));</code>
+    <code>$class->supprimer(array( "valeur"=>" id='$id' ", ));</code>
 
     <div class="mt-4">
         <nuxt-link to="/controlleur" class="btn btn-primary">Controller -></nuxt-link>
