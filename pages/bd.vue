@@ -20,6 +20,7 @@
         donnée distante ou URL distant
     </p>qdssqdqs
     dqsdqsdqs
+    sqdsqd
     <code>
         #Base de donnée local
         <br />db_datatable: "$DATABASE_LOCAL"
