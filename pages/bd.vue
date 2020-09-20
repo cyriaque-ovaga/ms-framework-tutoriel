@@ -17,6 +17,7 @@
         Vous pouvez modifier les variables sachant que celle qui ont un suffixe
         <strong>_dist</strong> correspond à une base de
         donnée distante ou URL distant
+
     </p>
     <code>
         #Base de donnée local
