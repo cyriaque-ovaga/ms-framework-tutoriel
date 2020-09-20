@@ -31,7 +31,7 @@
                             <nuxt-link to="/route" class="nav-link text-white">DevOPS</nuxt-link>
                         </li>
                         <li class="nav-item">
-                              <a href="https://gitlab.com/ms--framework/tutoriel" target="_blank" class="btn btn-primary">
+                              <a href="https://gitlab.com/ms--framework/php-framework" target="_blank" class="btn btn-primary">
                                 Gitlab Project
                               </a>
                         </li>
