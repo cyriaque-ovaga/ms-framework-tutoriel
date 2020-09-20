@@ -18,7 +18,7 @@
         <strong>_dist</strong>
         correspond à une base de
         donnée distante ou URL distant
-    </p>
+    </p>qdssqdqs
     <code>
         #Base de donnée local
         <br />db_datatable: "$DATABASE_LOCAL"
