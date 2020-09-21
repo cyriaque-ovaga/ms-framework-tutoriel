@@ -5,7 +5,10 @@
     <h2>Création d'un controlleur</h2>
     <code>composer new-controller $ressource $activity</code>
     <p>Exemple: composer new-controller facture pv</p>
-
+    <h3>Récupérer les données JSON venant de la vue</h3>
+    <code>
+      $this->request
+    </code>  
     <h3>Retourner un tableau JSON</h3>
     <code>
         $this->reponse(array(
