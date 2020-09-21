@@ -7,15 +7,12 @@
     <p>Il contient par défaut tous les codes pour une document API.</p>
     <h2>ms</h2>
     <p>Il contient toutes les classes du framework.</p>
-    <h3>app\home</h3>
-    <h4>assets</h4>
-    <p>Il content plusieurs dossiers</p>
+    <h3>config</h3>
+    <p>Il content la configuration denotre application</p>
     <ul>
-        <li>config</li>
         <ul>
             <li>branche : Il permet d'avoir une configuration par branche</li>
             <li>app.yaml : Il contient toutes les configurations de votre application</li>
-            <li>route_public.yaml : Les routes qui sont utilisés dans le projet</li>
         </ul>
     </ul>
     <h4>controller</h4>
@@ -26,7 +23,7 @@
     <h2>Changer de branche</h2>
     <code>composer branche $nom_branche</code>
     <h2>Accéder à une variable de configuration de l'application</h2>
-    <code>$this->app->config->get("$variable");</code>
+    <code>$this->app->ma_config["$variable"];</code>
     <div class="mt-4">
         <nuxt-link to="/bd" class="btn btn-primary">Base de données -></nuxt-link>
     </div>
