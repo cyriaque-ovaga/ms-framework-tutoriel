@@ -30,12 +30,5 @@
         base de donnée en dévellopement <br />$*_url = Les liens vers les
         environnements
     </code>
-
-    <div class="alert alert-info">
-        <p align="center">
-            Nous sommes à l'attente de toute proposition d'évolution de ces projets
-            open-source.
-        </p>
-    </div>
 </div>
 </template>
