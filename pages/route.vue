@@ -6,23 +6,20 @@
         <strong>app\controller\$ressource\$activity</strong>
     </p>
     <h2>Création d'une route</h2>
-    <p>Ajouter une méthode dans le controller, mettez en commentaire de l'application</p>
+    <p>
+        Ajouter une méthode dans le controller, mettez en commentaire de
+        l'application
+    </p>
     <code>
-        <br />/**
-        <br />* @route: /$PATH
-        <br />* @method: $METHOD
-        <br />* @name: SEARCH $PATH
-        <br />*/
+        <br />/** <br />* @route: /$PATH <br />* @method: $METHOD <br />*
+        @middleware: $class_middleware <br />* @name: SEARCH $PATH <br />*/
     </code>
     <p>
         <strong>Exemple:</strong>
         <br />
         <code>
-            <br />/**
-            <br />* @route: /user/profil
-            <br />* @method: GET
-            <br />* @name: SEARCH user/profil
-            <br />*/
+            <br />/** <br />* @route: /user/profil <br />* @method: GET <br />*
+            @middleware: home <br />* @name: SEARCH user/profil <br />*/
         </code>
     </p>
     <div class="mt-4">
