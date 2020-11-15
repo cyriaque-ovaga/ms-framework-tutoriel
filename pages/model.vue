@@ -64,6 +64,16 @@
         { if($data==1){ return "Homme"; }else{ return "Femme"; }}
         <br />
     </code>
+    <h2>Formater avancé</h2>
+    <p>
+        vous pouvez faire un formatage avancé des données avec la méthode:
+        <strong>get_control</strong>.
+    </p>
+    <h2>Traitement apres initiation de la base de donnée</h2>
+    <p>
+        Vous pouvez faire une initiation de la base de donnée avec la méthode:
+        <strong>after_init_bd</strong>.
+    </p>
     <h1>Les requêtes MySQL</h1>
     <p>Vous devez créer la class qui relie votre model:</p>
     <code>$class= new \app\model\$ressource\$activity();</code>
